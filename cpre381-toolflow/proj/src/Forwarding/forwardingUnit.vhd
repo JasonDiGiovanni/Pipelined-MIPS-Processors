@@ -82,8 +82,10 @@ process_label : process( all  ) --i_RegRdAddrMEMWB, i_RegWriteMEMWB, i_RegRdAddr
 
 	else
 		o_forwardBMem <= '0';
+
 	end if;
 ---------------------------Load Word Use Case Hazard---------------------------------------
+--Forwarding specifically a load word data hazard (the value is after the load word)
 
 
 ---------------------------Branch Decision Forwarding---------------------------------------

@@ -30,7 +30,7 @@ entity hazardDetectionUnit is
        i_isJump            : in std_logic;       
        o_FlushIFID         : out std_logic;
        o_Stall             : out std_logic;
-       o_Flush             : out std_logic);
+       o_FlushIDEX         : out std_logic);
 
 end hazardDetectionUnit;
 
@@ -44,44 +44,70 @@ process_label : process( i_CLK ) --i_RegRtAddrIDEX, i_MemToRegIDEX, i_RegRsAddrI
 
 	begin
 
+--Flushing IDEX register and Flush IFID Register
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
  if (rising_edge(i_CLK)) then
  
+	-- Flush is for a load word use case something ex.
+	--lw t1 x(x)
+	--add x t1 x
         if ((i_MemToRegIDEX = '1') and ((i_RegRtAddrIDEX = i_RegRsAddrIFID) or (i_RegRtAddrIDEX = i_RegRtAddrIFID)))
-                then o_Flush <= '1';
+                then o_FlushIDEX <= '1';
+ 		o_FlushIFID <= '0';
 
+	--Branching (must flush is there is a data hazard before branch can happen in decode stage) ex.
+	--add t1 x x 
+	--beq t1 x label
 	elsif ((i_isBranchIFID = '1')  and (i_RegWrAddrIDEX /= "00000") and ((i_RegRsAddrIFID = i_RegWrAddrIDEX) or (i_RegRtAddrIFID = i_RegWrAddrIDEX)) )
-		then o_Flush <= '1';
+		then o_FlushIDEX <= '1';
+		o_FlushIFID <= '0';
+
+	-- When a branch is taken it flushes the IDEX register
+	elsif (i_isJump = '1')
+                then o_FlushIDEX <= '0';
+		o_FlushIFID <= '1';
+
+        else
+                o_FlushIDEX <= '0';
+		o_FlushIFID <= '0';
+	end if;
+else 
+	o_FlushIDEX <= '0';
+	o_FlushIFID <= '0';
+
+end if;
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--Flush IFID register
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- if (rising_edge(i_CLK)) then
+ 
+	--Ensures that if flushing IDEX you must wait before flushing IFID
+        --if ((i_MemToRegIDEX = '1') and ((i_RegRtAddrIDEX = i_RegRsAddrIFID) or (i_RegRtAddrIDEX = i_RegRtAddrIFID)))
+               -- then o_FlushIFID <= '0';
+
+	--elsif ((i_isBranchIFID = '1')  and (i_RegWrAddrIDEX /= "00000") and ((i_RegRsAddrIFID = i_RegWrAddrIDEX) or (i_RegRtAddrIFID = i_RegWrAddrIDEX)) )
+		--then o_FlushIFID <= '0';
 
 	--elsif (i_isJump = '1')
                 --then o_FlushIFID <= '1';
 
-        else
-                o_Flush <= '0';
-	end if;
-else 
-	o_Flush <= '0';
+       -- else
+              --  o_FlushIFID <= '0';
+	--end if;
+--else 
+	--o_FlushIFID <= '0';
 
-end if;
+--end if;
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- if (rising_edge(i_CLK)) then
- 
-        if ((i_MemToRegIDEX = '1') and ((i_RegRtAddrIDEX = i_RegRsAddrIFID) or (i_RegRtAddrIDEX = i_RegRtAddrIFID)))
-                then o_FlushIFID <= '0';
 
-	elsif ((i_isBranchIFID = '1')  and (i_RegWrAddrIDEX /= "00000") and ((i_RegRsAddrIFID = i_RegWrAddrIDEX) or (i_RegRtAddrIFID = i_RegWrAddrIDEX)) )
-		then o_FlushIFID <= '0';
 
-	elsif (i_isJump = '1')
-                then o_FlushIFID <= '1';
 
-        else
-                o_FlushIFID <= '0';
-	end if;
-else 
-	o_FlushIFID <= '0';
-
-end if;
-
+-- Stall is for a load word use case or Branch
+-- Stalls PC and IFID Register
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  if (falling_edge(i_CLK)) then
 
@@ -97,7 +123,7 @@ end if;
                o_Stall <= '0';
 	end if;
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 end if;
 

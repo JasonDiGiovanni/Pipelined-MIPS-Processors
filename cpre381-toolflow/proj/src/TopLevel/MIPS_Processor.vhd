@@ -336,7 +336,7 @@ component hazardDetectionUnit is
        i_isJump            : in std_logic;       
        o_FlushIFID         : out std_logic;
        o_Stall             : out std_logic;
-       o_Flush             : out std_logic);
+       o_FlushIDEX         : out std_logic);
 end component;
 
 component forwardingUnit is
@@ -557,7 +557,7 @@ BrnchMux: mux2t1
        i_isJump                => s_BrchEq or s_BrchNe or s_isJump or s_isJumpReg,
        o_FlushIFID             => s_flushIFID,
        o_Stall                 => s_stallIFID,
-       o_Flush                 => s_flushIDEX);
+       o_FlushIDEX             => s_flushIDEX);
 
 s_stallPC <= s_stallIFID;
 
