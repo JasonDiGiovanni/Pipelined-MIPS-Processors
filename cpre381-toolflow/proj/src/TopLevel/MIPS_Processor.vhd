@@ -201,6 +201,7 @@ component reg_IFID is
   port(i_CLK        : in std_logic;     		    -- Clock input
        i_RST        : in std_logic;    			    -- Reset input
        i_WE         : in std_logic;                         -- Write enable input
+       i_Flush      : in std_logic;  
        i_PC         : in std_logic_vector(31 downto 0);     -- PC value input
        i_Instr      : in std_logic_vector(31 downto 0);     -- Instruction value input
        o_PC         : out std_logic_vector(31 downto 0);    -- PC value output
@@ -211,6 +212,7 @@ component reg_IDEX is
   port(i_CLK        : in std_logic;     		    -- Clock input
        i_RST        : in std_logic;     		    -- Reset input
        i_WE         : in std_logic;     		    -- Write enable input
+       i_Flush      : in std_logic;  
        i_Halt       : in std_logic;     		    -- Halt control signal
        i_Branch     : in std_logic;     		    -- Branch control signal
        i_MemToReg   : in std_logic;     		    -- MemToReg control signal
@@ -459,8 +461,9 @@ begin
 
   IFID_Pipeline_Reg : reg_IFID port map (
        i_CLK         =>   iCLK,
-       i_RST         =>   iRST or s_flushIFID,   -- or s_flushIFID
-       i_WE          =>   not s_stallIFID,     
+       i_RST         =>   iRST,
+       i_WE          =>   not s_stallIFID,   
+       i_Flush       =>   s_flushIFID,
        i_PC          =>   s_PC4,      
        i_Instr       =>   s_Inst,   
        o_PC          =>   s_PCfourIFID,    
@@ -583,8 +586,9 @@ s_stallPC <= s_stallIFID;
 
 IDEX_Pipeline_Reg:  reg_IDEX port map(
        i_CLK         =>   iCLK,
-       i_RST         =>   s_flushIDEX or iRST,
+       i_RST         =>  iRST,
        i_WE          =>   '1',  --not s_stallIDEX
+       i_Flush       =>   s_flushIDEX, 
        i_Halt        =>   s_tempHalt,
        i_Branch      =>   s_BrchEq or s_BrchNe or s_isJump or s_isJumpReg,
        i_MemToReg    =>   s_MemtoReg,
@@ -697,7 +701,7 @@ forward_MUX_B : mux3t1_32 port map (
    g_NBITMUX_DMEM_FORWARD: mux2t1_N port map (
 		i_S => s_forwardSelBMem,	
 		i_D0 => s_rt_DBIDEX,   
-		i_D1 => s_aluOutEXMEM, 
+		i_D1 => s_DMemOut, 
 		o_O => s_forwardMemB);
 
  s_Ovfl     <= s_ALUOverflow and (not s_CntrlOverflow);

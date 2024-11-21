@@ -40,16 +40,18 @@ architecture dataflow of hazardDetectionUnit is
 
 begin
 
-process_label : process( i_CLK ) --i_RegRtAddrIDEX, i_MemToRegIDEX, i_RegRsAddrIFID, i_RegRtAddrIFID
+process_label : process( all ) --i_RegRtAddrIDEX, i_MemToRegIDEX, i_RegRsAddrIFID, i_RegRtAddrIFID
 
 	begin
 
- if (rising_edge(i_CLK)) then
- 
-        if ((i_MemToRegIDEX = '1') and ((i_RegRtAddrIDEX = i_RegRsAddrIFID) or (i_RegRtAddrIDEX = i_RegRtAddrIFID)))
-                then o_Flush <= '1';
+ --if (rising_edge(i_CLK)) then
 
-	elsif ((i_isBranchIFID = '1')  and (i_RegWrAddrIDEX /= "00000") and ((i_RegRsAddrIFID = i_RegWrAddrIDEX) or (i_RegRtAddrIFID = i_RegWrAddrIDEX)) )
+       --o_Flush <= '0';
+ 
+        --if ((i_MemToRegIDEX = '1') and ((i_RegRtAddrIDEX = i_RegRsAddrIFID) or (i_RegRtAddrIDEX = i_RegRtAddrIFID)))
+         --       then o_Flush <= '1';
+
+	if ((i_isBranchIFID = '1')  and (i_RegWrAddrIDEX /= "00000") and ((i_RegRsAddrIFID = i_RegWrAddrIDEX) or (i_RegRtAddrIFID = i_RegWrAddrIDEX)) )
 		then o_Flush <= '1';
 
 	--elsif (i_isJump = '1')
@@ -58,12 +60,14 @@ process_label : process( i_CLK ) --i_RegRtAddrIDEX, i_MemToRegIDEX, i_RegRsAddrI
         else
                 o_Flush <= '0';
 	end if;
-else 
-	o_Flush <= '0';
+--else 
+	--o_Flush <= '0';
 
-end if;
+--end if;
 
- if (rising_edge(i_CLK)) then
+ --if (rising_edge(i_CLK)) then
+
+--o_FlushIFID <= '0';
  
         if ((i_MemToRegIDEX = '1') and ((i_RegRtAddrIDEX = i_RegRsAddrIFID) or (i_RegRtAddrIDEX = i_RegRtAddrIFID)))
                 then o_FlushIFID <= '0';
@@ -77,13 +81,13 @@ end if;
         else
                 o_FlushIFID <= '0';
 	end if;
-else 
-	o_FlushIFID <= '0';
+--else 
+	--o_FlushIFID <= '0';
 
-end if;
+--end if;
 
 
- if (falling_edge(i_CLK)) then
+ --if (falling_edge(i_CLK)) then
 
         if ((i_MemToRegIDEX = '1') and ((i_RegRtAddrIDEX = i_RegRsAddrIFID) or (i_RegRtAddrIDEX = i_RegRtAddrIFID))) 
                 then o_Stall <= '1';
@@ -99,7 +103,7 @@ end if;
 
 
 
-end if;
+--end if;
 
 
 end process;

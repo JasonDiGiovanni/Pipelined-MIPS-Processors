@@ -45,6 +45,8 @@ process_label : process( i_CLK ) --i_RegRtAddrIDEX, i_MemToRegIDEX, i_RegRsAddrI
 	begin
 
  if (rising_edge(i_CLK)) then
+
+       --o_Flush <= '0';
  
         if ((i_MemToRegIDEX = '1') and ((i_RegRtAddrIDEX = i_RegRsAddrIFID) or (i_RegRtAddrIDEX = i_RegRtAddrIFID)))
                 then o_Flush <= '1';
@@ -58,10 +60,14 @@ process_label : process( i_CLK ) --i_RegRtAddrIDEX, i_MemToRegIDEX, i_RegRsAddrI
         else
                 o_Flush <= '0';
 	end if;
+--else 
+	--o_Flush <= '0';
 
 end if;
 
  if (rising_edge(i_CLK)) then
+
+--o_FlushIFID <= '0';
  
         if ((i_MemToRegIDEX = '1') and ((i_RegRtAddrIDEX = i_RegRsAddrIFID) or (i_RegRtAddrIDEX = i_RegRtAddrIFID)))
                 then o_FlushIFID <= '0';
@@ -75,6 +81,8 @@ end if;
         else
                 o_FlushIFID <= '0';
 	end if;
+--else 
+	--o_FlushIFID <= '0';
 
 end if;
 
