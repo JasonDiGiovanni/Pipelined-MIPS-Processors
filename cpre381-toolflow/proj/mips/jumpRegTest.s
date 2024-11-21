@@ -9,10 +9,14 @@ main:
     
                                                                 
                                                                                        
-    addi $t0, $0, 1          
-    addi $t1, $0, 1                                                                                        
-    beq $t0, $t1, exit 
-    addi $t2, $0, 3      
+jal return
+j exit2
+j exit
+return:
+	addi $t1 $ra 4
+	jr $t1    
    
 exit:
     halt
+
+exit2:

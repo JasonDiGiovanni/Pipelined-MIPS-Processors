@@ -520,7 +520,7 @@ BrnchMux: mux2t1
 		is_zero  	=> s_BrnchMuxOut,
 		i_instr    	=> s_InstIFID, 
 		i_immed    	=> s_immExt, 
-		i_rs_data    	=> s_rs_DAIFID, 
+		i_rs_data    	=> s_forwardBrnchMuxOutA, --s_rs_DAIFID
                 i_PCplusFour    => s_PCfourIFID,                                
 		o_PC		=> s_PCfetch); 
 
@@ -651,7 +651,7 @@ forwarding_Unit : forwardingUnit port map (
        i_RegRsAddrIFID     =>    s_InstIFID(25 downto 21),
        i_RegRtAddrIFID     =>    s_InstIFID(20 downto 16),
        i_RegWrAddrIDEX     =>    s_RegWrAddrIDEX,
-       i_isBranchIFID      =>    s_BrchEq OR s_BrchNe, 
+       i_isBranchIFID      =>    s_BrchEq OR s_BrchNe or s_isJumpReg, --possiblt take away s_isJumpReg
        o_forwardBMEM       =>    s_forwardSelBMem,
        o_forwardA          =>    s_forwardSelA,
        o_forwardB          =>    s_forwardSelB,

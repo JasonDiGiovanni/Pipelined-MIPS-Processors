@@ -48,6 +48,7 @@ process_label : process( i_CLK ) --i_RegRtAddrIDEX, i_MemToRegIDEX, i_RegRsAddrI
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
  if (rising_edge(i_CLK)) then
  
+	--Data Hazard
 	-- Flush is for a load word use case something ex.
 	--lw t1 x(x)
 	--add x t1 x
@@ -55,6 +56,7 @@ process_label : process( i_CLK ) --i_RegRtAddrIDEX, i_MemToRegIDEX, i_RegRsAddrI
                 then o_FlushIDEX <= '1';
  		o_FlushIFID <= '0';
 
+	--Data Hazard
 	--Branching (must flush is there is a data hazard before branch can happen in decode stage) ex.
 	--add t1 x x 
 	--beq t1 x label
@@ -62,6 +64,7 @@ process_label : process( i_CLK ) --i_RegRtAddrIDEX, i_MemToRegIDEX, i_RegRsAddrI
 		then o_FlushIDEX <= '1';
 		o_FlushIFID <= '0';
 
+	--Control Hazard
 	-- When a branch is taken it flushes the IDEX register
 	elsif (i_isJump = '1')
                 then o_FlushIDEX <= '0';
@@ -104,7 +107,7 @@ end if;
 
 
 
-
+--These are for data hazards into branch
 -- Stall is for a load word use case or Branch
 -- Stalls PC and IFID Register
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
