@@ -50,16 +50,17 @@ for2:
     NOP                                                                                     #Execute
     #lw $t3, arr($t2)           # Load arr[j] into $t3                                       #Memory Access
     lui $1, 4097
-    NOP
+    addi $t4, $t2, 4
+    #NOP
     NOP
     NOP
     addu $1, $1, $10
     NOP
     NOP
     lw $11, 0($1)
-    addi $t4, $t2, 4           # $t4 = (j + 1) * 4 (word offset for arr[j + 1])             #Write Back           #Fetch.
-    NOP                                                                                                           #Decode
-    NOP                                                                                                           #Execute
+    #addi $t4, $t2, 4           # $t4 = (j + 1) * 4 (word offset for arr[j + 1])             #Write Back           #Fetch.
+    #NOP                                                                                                           #Decode
+    #NOP                                                                                                           #Execute
     #lw $t5, arr($t4)           # Load arr[j + 1] into $t5                                   #Fetch.               #Memory Access
     lui $1, 4097
     NOP
