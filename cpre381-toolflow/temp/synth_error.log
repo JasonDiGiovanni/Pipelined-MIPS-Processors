@@ -15,222 +15,222 @@ Info: Running Quartus Prime Analysis & Synthesis
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Nov 30 15:31:24 2024
+    Info: Processing started: Thu Dec 12 17:12:31 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off toolflow -c toolflow
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd
-    Info (12022): Found design unit 1: alu-structural File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 56
-    Info (12023): Found entity 1: alu File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 16
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityModule.vhd
-    Info (12022): Found design unit 1: equalityModule-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityModule.vhd Line: 27
-    Info (12023): Found entity 1: equalityModule File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityModule.vhd Line: 19
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityMuxModule.vhd
-    Info (12022): Found design unit 1: equalityMuxModule-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityMuxModule.vhd Line: 27
-    Info (12023): Found entity 1: equalityMuxModule File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityMuxModule.vhd Line: 19
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/lessThanModule.vhd
-    Info (12022): Found design unit 1: lessThanModule-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/lessThanModule.vhd Line: 28
-    Info (12023): Found entity 1: lessThanModule File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/lessThanModule.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/mux8t1_32.vhd
-    Info (12022): Found design unit 1: mux8t1_32-structural File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/mux8t1_32.vhd Line: 30
-    Info (12023): Found entity 1: mux8t1_32 File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/mux8t1_32.vhd Line: 16
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/barrelShifter.vhd
-    Info (12022): Found design unit 1: barrelShifter-structural File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/barrelShifter.vhd Line: 27
-    Info (12023): Found entity 1: barrelShifter File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/barrelShifter.vhd Line: 18
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/vectorReverser_N.vhd
-    Info (12022): Found design unit 1: vectorReverser_N-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/vectorReverser_N.vhd Line: 25
-    Info (12023): Found entity 1: vectorReverser_N File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/vectorReverser_N.vhd Line: 18
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/andg2.vhd
-    Info (12022): Found design unit 1: andg2-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/andg2.vhd Line: 31
-    Info (12023): Found entity 1: andg2 File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/andg2.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/dffg.vhd
-    Info (12022): Found design unit 1: dffg-mixed File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/dffg.vhd Line: 33
-    Info (12023): Found entity 1: dffg File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/dffg.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/invg.vhd
-    Info (12022): Found design unit 1: invg-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/invg.vhd Line: 30
-    Info (12023): Found entity 1: invg File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/invg.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd
-    Info (12022): Found design unit 1: mux2t1-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 26
-    Info (12023): Found entity 1: mux2t1 File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 17
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1_N.vhd
-    Info (12022): Found design unit 1: mux2t1_N-structural File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1_N.vhd Line: 30
-    Info (12023): Found entity 1: mux2t1_N File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1_N.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/org2.vhd
-    Info (12022): Found design unit 1: org2-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/org2.vhd Line: 31
-    Info (12023): Found entity 1: org2 File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/org2.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/xorg2.vhd
-    Info (12022): Found design unit 1: xorg2-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/xorg2.vhd Line: 31
-    Info (12023): Found entity 1: xorg2 File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/xorg2.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd
-    Info (12022): Found design unit 1: carryLookaheadAdder-mixed File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd Line: 39
-    Info (12023): Found entity 1: carryLookaheadAdder File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd Line: 29
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/fullAdder.vhd
-    Info (12022): Found design unit 1: fullAdder-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/fullAdder.vhd Line: 27
-    Info (12023): Found entity 1: fullAdder File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/fullAdder.vhd Line: 17
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd
-    Info (12022): Found design unit 1: controlUnit-behavioral File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 43
-    Info (12023): Found entity 1: controlUnit File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 19
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder1bit.vhd
-    Info (12022): Found design unit 1: adder1bit-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder1bit.vhd Line: 32
-    Info (12023): Found entity 1: adder1bit File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder1bit.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder_N.vhd
-    Info (12022): Found design unit 1: adder_N-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder_N.vhd Line: 32
-    Info (12023): Found entity 1: adder_N File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder_N.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/fetchLogic.vhd
-    Info (12022): Found design unit 1: fetchLogic-structural File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/fetchLogic.vhd Line: 32
-    Info (12023): Found entity 1: fetchLogic File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/fetchLogic.vhd Line: 18
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Forwarding/forwardingUnit.vhd
-    Info (12022): Found design unit 1: forwardingUnit-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Forwarding/forwardingUnit.vhd Line: 43
-    Info (12023): Found entity 1: forwardingUnit File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Forwarding/forwardingUnit.vhd Line: 18
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/hazardDetectionUnit.vhd
-    Info (12022): Found design unit 1: hazardDetectionUnit-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/hazardDetectionUnit.vhd Line: 41
-    Info (12023): Found entity 1: hazardDetectionUnit File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/hazardDetectionUnit.vhd Line: 19
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/mux3t1_32.vhd
-    Info (12022): Found design unit 1: mux3t1_32-structural File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/mux3t1_32.vhd Line: 25
-    Info (12023): Found entity 1: mux3t1_32 File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/mux3t1_32.vhd Line: 16
-Info (12021): Found 1 design units, including 0 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/MIPS_types.vhd
-    Info (12022): Found design unit 1: MIPS_types File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/MIPS_types.vhd Line: 15
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp.vhd
-    Info (12022): Found design unit 1: onesComp-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp.vhd Line: 24
-    Info (12023): Found entity 1: onesComp File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp.vhd Line: 17
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp_N.vhd
-    Info (12022): Found design unit 1: onesComp_N-structural File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp_N.vhd Line: 23
-    Info (12023): Found entity 1: onesComp_N File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp_N.vhd Line: 16
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/dffgNeg.vhd
-    Info (12022): Found design unit 1: dffgNeg-mixed File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/dffgNeg.vhd Line: 33
-    Info (12023): Found entity 1: dffgNeg File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/dffgNeg.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_EXMEM.vhd
-    Info (12022): Found design unit 1: reg_EXMEM-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_EXMEM.vhd Line: 57
-    Info (12023): Found entity 1: reg_EXMEM File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_EXMEM.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IDEX.vhd
-    Info (12022): Found design unit 1: reg_IDEX-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IDEX.vhd Line: 73
-    Info (12023): Found entity 1: reg_IDEX File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IDEX.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IFID.vhd
-    Info (12022): Found design unit 1: reg_IFID-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IFID.vhd Line: 35
-    Info (12023): Found entity 1: reg_IFID File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IFID.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_MEMWB.vhd
-    Info (12022): Found design unit 1: reg_MEMWB-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_MEMWB.vhd Line: 49
-    Info (12023): Found entity 1: reg_MEMWB File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_MEMWB.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/dffgPC.vhd
-    Info (12022): Found design unit 1: dffgPC-mixed File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/dffgPC.vhd Line: 33
-    Info (12023): Found entity 1: dffgPC File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/dffgPC.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd
-    Info (12022): Found design unit 1: regFile-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 41
-    Info (12023): Found entity 1: regFile File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 26
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_N.vhd
-    Info (12022): Found design unit 1: reg_N-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_N.vhd Line: 32
-    Info (12023): Found entity 1: reg_N File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_N.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd
-    Info (12022): Found design unit 1: reg_NPC-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd Line: 32
-    Info (12023): Found entity 1: reg_NPC File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/stackPointerRegister.vhd
-    Info (12022): Found design unit 1: stackPointerRegister-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/stackPointerRegister.vhd Line: 37
-    Info (12023): Found entity 1: stackPointerRegister File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/stackPointerRegister.vhd Line: 27
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
-    Info (12022): Found design unit 1: MIPS_Processor-structure File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 36
-    Info (12023): Found entity 1: MIPS_Processor File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 24
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/decoder5t32.vhd
-    Info (12022): Found design unit 1: decoder5t32-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/decoder5t32.vhd Line: 28
-    Info (12023): Found entity 1: decoder5t32 File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/decoder5t32.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mem.vhd
-    Info (12022): Found design unit 1: mem-rtl File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mem.vhd Line: 27
-    Info (12023): Found entity 1: mem File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mem.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mux32t1_new.vhd
-    Info (12022): Found design unit 1: mux32t1_new-mux_arch File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mux32t1_new.vhd Line: 32
-    Info (12023): Found entity 1: mux32t1_new File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mux32t1_new.vhd Line: 23
-Info (12021): Found 2 design units, including 1 entities, in source file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/sign_ext.vhd
-    Info (12022): Found design unit 1: sign_ext-dataflow File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/sign_ext.vhd Line: 22
-    Info (12023): Found entity 1: sign_ext File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/sign_ext.vhd Line: 8
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd
+    Info (12022): Found design unit 1: alu-structural File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 56
+    Info (12023): Found entity 1: alu File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityModule.vhd
+    Info (12022): Found design unit 1: equalityModule-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityModule.vhd Line: 27
+    Info (12023): Found entity 1: equalityModule File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityModule.vhd Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityMuxModule.vhd
+    Info (12022): Found design unit 1: equalityMuxModule-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityMuxModule.vhd Line: 27
+    Info (12023): Found entity 1: equalityMuxModule File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/equalityMuxModule.vhd Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/lessThanModule.vhd
+    Info (12022): Found design unit 1: lessThanModule-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/lessThanModule.vhd Line: 28
+    Info (12023): Found entity 1: lessThanModule File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/lessThanModule.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/mux8t1_32.vhd
+    Info (12022): Found design unit 1: mux8t1_32-structural File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/mux8t1_32.vhd Line: 30
+    Info (12023): Found entity 1: mux8t1_32 File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/mux8t1_32.vhd Line: 16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/barrelShifter.vhd
+    Info (12022): Found design unit 1: barrelShifter-structural File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/barrelShifter.vhd Line: 27
+    Info (12023): Found entity 1: barrelShifter File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/barrelShifter.vhd Line: 18
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/vectorReverser_N.vhd
+    Info (12022): Found design unit 1: vectorReverser_N-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/vectorReverser_N.vhd Line: 25
+    Info (12023): Found entity 1: vectorReverser_N File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/vectorReverser_N.vhd Line: 18
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/andg2.vhd
+    Info (12022): Found design unit 1: andg2-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/andg2.vhd Line: 31
+    Info (12023): Found entity 1: andg2 File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/andg2.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/dffg.vhd
+    Info (12022): Found design unit 1: dffg-mixed File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/dffg.vhd Line: 33
+    Info (12023): Found entity 1: dffg File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/dffg.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/invg.vhd
+    Info (12022): Found design unit 1: invg-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/invg.vhd Line: 30
+    Info (12023): Found entity 1: invg File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/invg.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd
+    Info (12022): Found design unit 1: mux2t1-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 26
+    Info (12023): Found entity 1: mux2t1 File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 17
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1_N.vhd
+    Info (12022): Found design unit 1: mux2t1_N-structural File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1_N.vhd Line: 30
+    Info (12023): Found entity 1: mux2t1_N File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1_N.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/org2.vhd
+    Info (12022): Found design unit 1: org2-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/org2.vhd Line: 31
+    Info (12023): Found entity 1: org2 File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/org2.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/xorg2.vhd
+    Info (12022): Found design unit 1: xorg2-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/xorg2.vhd Line: 31
+    Info (12023): Found entity 1: xorg2 File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/xorg2.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd
+    Info (12022): Found design unit 1: carryLookaheadAdder-mixed File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd Line: 39
+    Info (12023): Found entity 1: carryLookaheadAdder File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd Line: 29
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/fullAdder.vhd
+    Info (12022): Found design unit 1: fullAdder-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/fullAdder.vhd Line: 27
+    Info (12023): Found entity 1: fullAdder File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/fullAdder.vhd Line: 17
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd
+    Info (12022): Found design unit 1: controlUnit-behavioral File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 43
+    Info (12023): Found entity 1: controlUnit File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder1bit.vhd
+    Info (12022): Found design unit 1: adder1bit-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder1bit.vhd Line: 32
+    Info (12023): Found entity 1: adder1bit File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder1bit.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder_N.vhd
+    Info (12022): Found design unit 1: adder_N-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder_N.vhd Line: 32
+    Info (12023): Found entity 1: adder_N File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder_N.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/fetchLogic.vhd
+    Info (12022): Found design unit 1: fetchLogic-structural File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/fetchLogic.vhd Line: 32
+    Info (12023): Found entity 1: fetchLogic File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/fetchLogic.vhd Line: 18
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Forwarding/forwardingUnit.vhd
+    Info (12022): Found design unit 1: forwardingUnit-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Forwarding/forwardingUnit.vhd Line: 43
+    Info (12023): Found entity 1: forwardingUnit File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Forwarding/forwardingUnit.vhd Line: 18
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/hazardDetectionUnit.vhd
+    Info (12022): Found design unit 1: hazardDetectionUnit-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/hazardDetectionUnit.vhd Line: 41
+    Info (12023): Found entity 1: hazardDetectionUnit File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/hazardDetectionUnit.vhd Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/mux3t1_32.vhd
+    Info (12022): Found design unit 1: mux3t1_32-structural File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/mux3t1_32.vhd Line: 25
+    Info (12023): Found entity 1: mux3t1_32 File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/HazardDetection/mux3t1_32.vhd Line: 16
+Info (12021): Found 1 design units, including 0 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/MIPS_types.vhd
+    Info (12022): Found design unit 1: MIPS_types File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/MIPS_types.vhd Line: 15
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp.vhd
+    Info (12022): Found design unit 1: onesComp-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp.vhd Line: 24
+    Info (12023): Found entity 1: onesComp File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp.vhd Line: 17
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp_N.vhd
+    Info (12022): Found design unit 1: onesComp_N-structural File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp_N.vhd Line: 23
+    Info (12023): Found entity 1: onesComp_N File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp_N.vhd Line: 16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/dffgNeg.vhd
+    Info (12022): Found design unit 1: dffgNeg-mixed File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/dffgNeg.vhd Line: 33
+    Info (12023): Found entity 1: dffgNeg File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/dffgNeg.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_EXMEM.vhd
+    Info (12022): Found design unit 1: reg_EXMEM-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_EXMEM.vhd Line: 57
+    Info (12023): Found entity 1: reg_EXMEM File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_EXMEM.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IDEX.vhd
+    Info (12022): Found design unit 1: reg_IDEX-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IDEX.vhd Line: 73
+    Info (12023): Found entity 1: reg_IDEX File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IDEX.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IFID.vhd
+    Info (12022): Found design unit 1: reg_IFID-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IFID.vhd Line: 35
+    Info (12023): Found entity 1: reg_IFID File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_IFID.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_MEMWB.vhd
+    Info (12022): Found design unit 1: reg_MEMWB-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_MEMWB.vhd Line: 49
+    Info (12023): Found entity 1: reg_MEMWB File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/PipelineRegisters/reg_MEMWB.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/dffgPC.vhd
+    Info (12022): Found design unit 1: dffgPC-mixed File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/dffgPC.vhd Line: 33
+    Info (12023): Found entity 1: dffgPC File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/dffgPC.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd
+    Info (12022): Found design unit 1: regFile-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 41
+    Info (12023): Found entity 1: regFile File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_N.vhd
+    Info (12022): Found design unit 1: reg_N-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_N.vhd Line: 32
+    Info (12023): Found entity 1: reg_N File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_N.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd
+    Info (12022): Found design unit 1: reg_NPC-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd Line: 32
+    Info (12023): Found entity 1: reg_NPC File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/stackPointerRegister.vhd
+    Info (12022): Found design unit 1: stackPointerRegister-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/stackPointerRegister.vhd Line: 37
+    Info (12023): Found entity 1: stackPointerRegister File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/stackPointerRegister.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+    Info (12022): Found design unit 1: MIPS_Processor-structure File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 36
+    Info (12023): Found entity 1: MIPS_Processor File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 24
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/decoder5t32.vhd
+    Info (12022): Found design unit 1: decoder5t32-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/decoder5t32.vhd Line: 28
+    Info (12023): Found entity 1: decoder5t32 File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/decoder5t32.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mem.vhd
+    Info (12022): Found design unit 1: mem-rtl File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mem.vhd Line: 27
+    Info (12023): Found entity 1: mem File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mem.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mux32t1_new.vhd
+    Info (12022): Found design unit 1: mux32t1_new-mux_arch File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mux32t1_new.vhd Line: 32
+    Info (12023): Found entity 1: mux32t1_new File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mux32t1_new.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/sign_ext.vhd
+    Info (12022): Found design unit 1: sign_ext-dataflow File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/sign_ext.vhd Line: 22
+    Info (12023): Found entity 1: sign_ext File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/sign_ext.vhd Line: 8
 Info (12127): Elaborating entity "MIPS_Processor" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(55): object "s_Halt" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 55
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(58): object "s_Ovfl" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 58
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(384): object "s_aluCar" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 384
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(385): object "temp" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 385
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(385): object "tempt" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 385
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(385): object "so_Car_PC4" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 385
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(404): object "s_regDstIDEX" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 404
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(411): object "s_PCEXMEM" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 411
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(412): object "s_isJumpRegEXMEM" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 412
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(412): object "s_AluZeroEXMEM" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 412
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(417): object "s_ImmMEMWB" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 417
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(425): object "s_forwardSelAIDEX" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 425
-Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(425): object "s_forwardSelBIDEX" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 425
-Info (12128): Elaborating entity "reg_NPC" for hierarchy "reg_NPC:g_NBITREG_PC" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 442
-Info (12128): Elaborating entity "dffg" for hierarchy "reg_NPC:g_NBITREG_PC|dffg:\G_NBit_Reg0:0:REGI" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd Line: 56
-Info (12128): Elaborating entity "dffgPC" for hierarchy "reg_NPC:g_NBITREG_PC|dffgPC:\G_NBit_Reg1:22:REGI" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd Line: 65
-Info (12128): Elaborating entity "mux2t1_N" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 449
-Info (12128): Elaborating entity "mux2t1" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr|mux2t1:\G_NBit_MUX:0:MUXI" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1_N.vhd Line: 43
-Info (12128): Elaborating entity "invg" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr|mux2t1:\G_NBit_MUX:0:MUXI|invg:g_Not" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 56
-Info (12128): Elaborating entity "andg2" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr|mux2t1:\G_NBit_MUX:0:MUXI|andg2:g_And1" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 60
-Info (12128): Elaborating entity "org2" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr|mux2t1:\G_NBit_MUX:0:MUXI|org2:g_Or" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 70
-Info (12128): Elaborating entity "sign_ext" for hierarchy "sign_ext:g_SIGNEXT_Fetch" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 455
-Info (12128): Elaborating entity "adder_N" for hierarchy "adder_N:g_NBITADDER_PC" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 472
-Info (12128): Elaborating entity "adder1bit" for hierarchy "adder_N:g_NBITADDER_PC|adder1bit:\G_NBit_Adder:0:ADDERI" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder_N.vhd Line: 54
-Info (12128): Elaborating entity "xorg2" for hierarchy "adder_N:g_NBITADDER_PC|adder1bit:\G_NBit_Adder:0:ADDERI|xorg2:g_XOR" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder1bit.vhd Line: 65
-Info (12128): Elaborating entity "mem" for hierarchy "mem:IMem" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 500
-Info (12128): Elaborating entity "reg_IFID" for hierarchy "reg_IFID:IFID_Pipeline_Reg" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 510
-Info (12128): Elaborating entity "regFile" for hierarchy "regFile:g_REGFILE" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 527
-Info (12128): Elaborating entity "decoder5t32" for hierarchy "regFile:g_REGFILE|decoder5t32:g_DECODER" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 82
-Info (12128): Elaborating entity "reg_N" for hierarchy "regFile:g_REGFILE|reg_N:\G_N_Reg_ZERO:0:REGIZERO" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 89
-Info (12128): Elaborating entity "stackPointerRegister" for hierarchy "regFile:g_REGFILE|stackPointerRegister:STACK_POINTER" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 106
-Info (12128): Elaborating entity "mux32t1_new" for hierarchy "regFile:g_REGFILE|mux32t1_new:g_MUX_RS" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 123
-Info (12128): Elaborating entity "mux3t1_32" for hierarchy "mux3t1_32:forwardBrnch_MUX_A" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 538
-Info (12128): Elaborating entity "equalityModule" for hierarchy "equalityModule:e_equalityModule" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 553
-Info (12128): Elaborating entity "fetchLogic" for hierarchy "fetchLogic:g_FETCHLOGIC" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 568
-Warning (10036): Verilog HDL or VHDL warning at fetchLogic.vhd(61): object "so_Car_I" assigned a value but never read File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/fetchLogic.vhd Line: 61
-Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:g_CONTRUNIT" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 581
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "RegDst", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "ALUSrc", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "MemtoReg", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "RegWrite", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "MemWrite", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "ALUControl", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "beq", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "bne", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "j", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "jr", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "sltu", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "shiftVariable", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "signSel", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "upper_immediate", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "UnsignedNoOverflow", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "halt", which holds its previous value in one or more paths through the process File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "halt" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "UnsignedNoOverflow" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "upper_immediate" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "signSel" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "shiftVariable" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "sltu" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "jr" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "j" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "bne" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "beq" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "ALUControl[0]" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "ALUControl[1]" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "ALUControl[2]" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "ALUControl[3]" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "MemWrite" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "RegWrite" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "MemtoReg" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "ALUSrc" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (10041): Inferred latch for "RegDst" at controlUnit.vhd(58) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
-Info (12128): Elaborating entity "hazardDetectionUnit" for hierarchy "hazardDetectionUnit:hazard_Detection" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 604
-Info (12128): Elaborating entity "reg_IDEX" for hierarchy "reg_IDEX:IDEX_Pipeline_Reg" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 643
-Info (12128): Elaborating entity "forwardingUnit" for hierarchy "forwardingUnit:forwarding_Unit" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 701
-Info (12128): Elaborating entity "alu" for hierarchy "alu:g_ALU" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 739
-Info (12128): Elaborating entity "equalityMuxModule" for hierarchy "alu:g_ALU|equalityMuxModule:e_equalityMuxModule" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 177
-Info (12128): Elaborating entity "lessThanModule" for hierarchy "alu:g_ALU|lessThanModule:l_lessThanModule" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 183
-Info (12128): Elaborating entity "carryLookaheadAdder" for hierarchy "alu:g_ALU|carryLookaheadAdder:c_carryAdder" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 201
-Info (12128): Elaborating entity "onesComp_N" for hierarchy "alu:g_ALU|carryLookaheadAdder:c_carryAdder|onesComp_N:g_onesComp" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd Line: 82
-Info (12128): Elaborating entity "onesComp" for hierarchy "alu:g_ALU|carryLookaheadAdder:c_carryAdder|onesComp_N:g_onesComp|onesComp:\G_NBit_ONES:0:ONESI" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp_N.vhd Line: 34
-Info (12128): Elaborating entity "fullAdder" for hierarchy "alu:g_ALU|carryLookaheadAdder:c_carryAdder|fullAdder:\G_NBit_FULL:0:FULLI" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd Line: 95
-Info (12128): Elaborating entity "barrelShifter" for hierarchy "alu:g_ALU|barrelShifter:b_barrelShifter" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 254
-Info (12128): Elaborating entity "vectorReverser_N" for hierarchy "alu:g_ALU|barrelShifter:b_barrelShifter|vectorReverser_N:VECTORREVERSER" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/barrelShifter.vhd Line: 55
-Info (12128): Elaborating entity "mux8t1_32" for hierarchy "alu:g_ALU|mux8t1_32:a_aluOutMux" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 262
-Info (12128): Elaborating entity "reg_EXMEM" for hierarchy "reg_EXMEM:EXMEM_Pipeline_Red" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 775
-Info (12128): Elaborating entity "reg_MEMWB" for hierarchy "reg_MEMWB:MEMWB" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 828
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(55): object "s_Halt" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 55
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(58): object "s_Ovfl" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 58
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(393): object "s_aluCar" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 393
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(394): object "temp" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 394
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(394): object "tempt" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 394
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(394): object "so_Car_PC4" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 394
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(413): object "s_regDstIDEX" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 413
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(420): object "s_PCEXMEM" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 420
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(421): object "s_isJumpRegEXMEM" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 421
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(421): object "s_AluZeroEXMEM" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 421
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(426): object "s_ImmMEMWB" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 426
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(434): object "s_forwardSelAIDEX" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 434
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(434): object "s_forwardSelBIDEX" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 434
+Info (12128): Elaborating entity "reg_NPC" for hierarchy "reg_NPC:g_NBITREG_PC" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 451
+Info (12128): Elaborating entity "dffg" for hierarchy "reg_NPC:g_NBITREG_PC|dffg:\G_NBit_Reg0:0:REGI" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd Line: 56
+Info (12128): Elaborating entity "dffgPC" for hierarchy "reg_NPC:g_NBITREG_PC|dffgPC:\G_NBit_Reg1:22:REGI" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/reg_NPC.vhd Line: 65
+Info (12128): Elaborating entity "mux2t1_N" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 458
+Info (12128): Elaborating entity "mux2t1" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr|mux2t1:\G_NBit_MUX:0:MUXI" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1_N.vhd Line: 43
+Info (12128): Elaborating entity "invg" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr|mux2t1:\G_NBit_MUX:0:MUXI|invg:g_Not" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 56
+Info (12128): Elaborating entity "andg2" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr|mux2t1:\G_NBit_MUX:0:MUXI|andg2:g_And1" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 60
+Info (12128): Elaborating entity "org2" for hierarchy "mux2t1_N:g_NBITMUX_PCnextAddr|mux2t1:\G_NBit_MUX:0:MUXI|org2:g_Or" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BottomLevel/mux2t1.vhd Line: 70
+Info (12128): Elaborating entity "sign_ext" for hierarchy "sign_ext:g_SIGNEXT_Fetch" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 464
+Info (12128): Elaborating entity "adder_N" for hierarchy "adder_N:g_NBITADDER_PC" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 481
+Info (12128): Elaborating entity "adder1bit" for hierarchy "adder_N:g_NBITADDER_PC|adder1bit:\G_NBit_Adder:0:ADDERI" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder_N.vhd Line: 54
+Info (12128): Elaborating entity "xorg2" for hierarchy "adder_N:g_NBITADDER_PC|adder1bit:\G_NBit_Adder:0:ADDERI|xorg2:g_XOR" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/adder1bit.vhd Line: 65
+Info (12128): Elaborating entity "mem" for hierarchy "mem:IMem" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 525
+Info (12128): Elaborating entity "reg_IFID" for hierarchy "reg_IFID:IFID_Pipeline_Reg" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 535
+Info (12128): Elaborating entity "regFile" for hierarchy "regFile:g_REGFILE" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 552
+Info (12128): Elaborating entity "decoder5t32" for hierarchy "regFile:g_REGFILE|decoder5t32:g_DECODER" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 82
+Info (12128): Elaborating entity "reg_N" for hierarchy "regFile:g_REGFILE|reg_N:\G_N_Reg_ZERO:0:REGIZERO" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 89
+Info (12128): Elaborating entity "stackPointerRegister" for hierarchy "regFile:g_REGFILE|stackPointerRegister:STACK_POINTER" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 106
+Info (12128): Elaborating entity "mux32t1_new" for hierarchy "regFile:g_REGFILE|mux32t1_new:g_MUX_RS" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/regFile.vhd Line: 123
+Info (12128): Elaborating entity "mux3t1_32" for hierarchy "mux3t1_32:forwardBrnch_MUX_A" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 563
+Info (12128): Elaborating entity "equalityModule" for hierarchy "equalityModule:e_equalityModule" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 578
+Info (12128): Elaborating entity "fetchLogic" for hierarchy "fetchLogic:g_FETCHLOGIC" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 593
+Warning (10036): Verilog HDL or VHDL warning at fetchLogic.vhd(61): object "so_Car_I" assigned a value but never read File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/FetchLogic/fetchLogic.vhd Line: 61
+Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:g_CONTRUNIT" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 606
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "RegDst", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "ALUSrc", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "MemtoReg", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "RegWrite", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "MemWrite", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "ALUControl", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "beq", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "bne", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "j", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "jr", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "sltu", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "shiftVariable", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "signSel", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "upper_immediate", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "UnsignedNoOverflow", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Warning (10631): VHDL Process Statement warning at controlUnit.vhd(58): inferring latch(es) for signal or variable "halt", which holds its previous value in one or more paths through the process File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "halt" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "UnsignedNoOverflow" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "upper_immediate" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "signSel" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "shiftVariable" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "sltu" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "jr" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "j" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "bne" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "beq" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "ALUControl[0]" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "ALUControl[1]" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "ALUControl[2]" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "ALUControl[3]" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "MemWrite" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "RegWrite" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "MemtoReg" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "ALUSrc" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (10041): Inferred latch for "RegDst" at controlUnit.vhd(58) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/ControlLogic/controlUnit.vhd Line: 58
+Info (12128): Elaborating entity "hazardDetectionUnit" for hierarchy "hazardDetectionUnit:hazard_Detection" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 629
+Info (12128): Elaborating entity "reg_IDEX" for hierarchy "reg_IDEX:IDEX_Pipeline_Reg" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 668
+Info (12128): Elaborating entity "forwardingUnit" for hierarchy "forwardingUnit:forwarding_Unit" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 726
+Info (12128): Elaborating entity "alu" for hierarchy "alu:g_ALU" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 764
+Info (12128): Elaborating entity "equalityMuxModule" for hierarchy "alu:g_ALU|equalityMuxModule:e_equalityMuxModule" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 177
+Info (12128): Elaborating entity "lessThanModule" for hierarchy "alu:g_ALU|lessThanModule:l_lessThanModule" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 183
+Info (12128): Elaborating entity "carryLookaheadAdder" for hierarchy "alu:g_ALU|carryLookaheadAdder:c_carryAdder" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 201
+Info (12128): Elaborating entity "onesComp_N" for hierarchy "alu:g_ALU|carryLookaheadAdder:c_carryAdder|onesComp_N:g_onesComp" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd Line: 82
+Info (12128): Elaborating entity "onesComp" for hierarchy "alu:g_ALU|carryLookaheadAdder:c_carryAdder|onesComp_N:g_onesComp|onesComp:\G_NBit_ONES:0:ONESI" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/OnesComp/onesComp_N.vhd Line: 34
+Info (12128): Elaborating entity "fullAdder" for hierarchy "alu:g_ALU|carryLookaheadAdder:c_carryAdder|fullAdder:\G_NBit_FULL:0:FULLI" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd Line: 95
+Info (12128): Elaborating entity "barrelShifter" for hierarchy "alu:g_ALU|barrelShifter:b_barrelShifter" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 254
+Info (12128): Elaborating entity "vectorReverser_N" for hierarchy "alu:g_ALU|barrelShifter:b_barrelShifter|vectorReverser_N:VECTORREVERSER" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/BarrelShifter/barrelShifter.vhd Line: 55
+Info (12128): Elaborating entity "mux8t1_32" for hierarchy "alu:g_ALU|mux8t1_32:a_aluOutMux" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Alu/alu.vhd Line: 262
+Info (12128): Elaborating entity "reg_EXMEM" for hierarchy "reg_EXMEM:EXMEM_Pipeline_Red" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 800
+Info (12128): Elaborating entity "reg_MEMWB" for hierarchy "reg_MEMWB:MEMWB" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 853
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "mem:IMem|ram" is uninferred due to asynchronous read logic File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mem.vhd Line: 35
+    Info (276007): RAM logic "mem:IMem|ram" is uninferred due to asynchronous read logic File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/mem.vhd Line: 35
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "mem:DMem|ram_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to SINGLE_PORT
@@ -256,45 +256,45 @@ Info (12133): Instantiated megafunction "mem:DMem|altsyncram:ram_rtl_0" with the
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_eg81.tdf
-    Info (12023): Found entity 1: altsyncram_eg81 File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/internal/QuartusWork/db/altsyncram_eg81.tdf Line: 28
-Info (13000): Registers with preset signals will power-up high File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/dffgPC.vhd Line: 53
+    Info (12023): Found entity 1: altsyncram_eg81 File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/internal/QuartusWork/db/altsyncram_eg81.tdf Line: 28
+Info (13000): Registers with preset signals will power-up high File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/Registers/dffgPC.vhd Line: 53
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 22 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "iInstAddr[0]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[1]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[12]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[13]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[14]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[15]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[16]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[17]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[18]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[19]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[20]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[21]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[22]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[23]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[24]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[25]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[26]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[27]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[28]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[29]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[30]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-    Warning (15610): No output dependent on input pin "iInstAddr[31]" File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
-Info (21057): Implemented 59998 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "iInstAddr[0]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[1]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[12]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[13]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[14]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[15]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[16]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[17]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[18]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[19]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[20]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[21]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[22]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[23]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[24]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[25]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[26]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[27]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[28]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[29]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[30]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+    Warning (15610): No output dependent on input pin "iInstAddr[31]" File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 29
+Info (21057): Implemented 59963 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 67 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 59867 logic cells
+    Info (21061): Implemented 59832 logic cells
     Info (21064): Implemented 32 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
-    Info: Peak virtual memory: 960 megabytes
-    Info: Processing ended: Sat Nov 30 15:33:25 2024
-    Info: Elapsed time: 00:02:01
-    Info: Total CPU time (on all processors): 00:02:04
+    Info: Peak virtual memory: 1058 megabytes
+    Info: Processing ended: Thu Dec 12 17:13:24 2024
+    Info: Elapsed time: 00:00:53
+    Info: Total CPU time (on all processors): 00:00:57
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
@@ -312,13 +312,13 @@ Info: Running Quartus Prime Fitter
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Nov 30 15:33:26 2024
+    Info: Processing started: Thu Dec 12 17:13:25 2024
 Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off toolflow -c toolflow
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = toolflow
 Info: Revision = toolflow
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (119006): Selected device EP4CE115F29C7 for design "toolflow"
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
@@ -349,14 +349,14 @@ Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
     Info (332111):   20.000         iCLK
-Info (176353): Automatically promoted node iCLK~input (placed in PIN J1 (CLK1, DIFFCLK_0n)) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 26
+Info (176353): Automatically promoted node iCLK~input (placed in PIN J1 (CLK1, DIFFCLK_0n)) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 26
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node iRST~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 27
+Info (176353): Automatically promoted node iRST~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 27
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node comb~3
-        Info (176357): Destination node comb~6
-Info (176353): Automatically promoted node comb~3 
+        Info (176357): Destination node comb~1
+        Info (176357): Destination node comb~4
+Info (176353): Automatically promoted node comb~1 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -374,31 +374,31 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  57 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  72 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  71 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:59
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:24
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:17
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:04
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:02:43
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:46
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 15% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 34% of the available device resources in the region that extends from location X23_Y24 to location X33_Y36
+    Info (170196): Router estimated peak interconnect usage is 36% of the available device resources in the region that extends from location X23_Y37 to location X33_Y48
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:04:42
-Info (11888): Total time spent on timing analysis during the Fitter is 51.62 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:02:08
+Info (11888): Total time spent on timing analysis during the Fitter is 19.71 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:22
-Info (144001): Generated suppressed messages file /home/ojewell/cpre381/Pipelined-MIPS-Processors/cpre381-toolflow/internal/QuartusWork/output_files/toolflow.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:08
+Info (144001): Generated suppressed messages file /home/coreybh/cpre381/Project2/Pipelined-MIPS-Processors/cpre381-toolflow/internal/QuartusWork/output_files/toolflow.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 2017 megabytes
-    Info: Processing ended: Sat Nov 30 15:43:18 2024
-    Info: Elapsed time: 00:09:52
-    Info: Total CPU time (on all processors): 00:15:49
+    Info: Peak virtual memory: 2621 megabytes
+    Info: Processing ended: Thu Dec 12 17:17:16 2024
+    Info: Elapsed time: 00:03:51
+    Info: Total CPU time (on all processors): 00:07:57
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
@@ -416,13 +416,13 @@ Info: Running Quartus Prime Assembler
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Nov 30 15:43:20 2024
+    Info: Processing started: Thu Dec 12 17:17:17 2024
 Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off toolflow -c toolflow
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 754 megabytes
-    Info: Processing ended: Sat Nov 30 15:43:27 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 757 megabytes
+    Info: Processing ended: Thu Dec 12 17:17:20 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03

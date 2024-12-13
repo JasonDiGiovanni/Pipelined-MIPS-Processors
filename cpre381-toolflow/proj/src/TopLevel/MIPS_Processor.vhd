@@ -366,6 +366,15 @@ component forwardingUnit is
        o_BranchForwardB    : out std_logic_vector(1 downto 0));
 end component;
 
+component carryLookaheadAdder is
+  port(i_A          : in std_logic_vector(31 downto 0);
+       i_B          : in std_logic_vector(31 downto 0);
+       i_nAddSub    : in std_logic;
+       o_C          : out std_logic;
+       o_O          : out std_logic;
+       o_S          : out std_logic_vector(31 downto 0));
+end component;
+
 
 
 
@@ -475,6 +484,14 @@ begin
 	    	i_B => s_NextInstAddr,	-- adding 4 for PC value
 	    	o_S => s_PC4Temp,
 	    	o_C => so_Car_PC4);
+
+ --c_carryAdder_PC: carryLookaheadAdder port map(
+   --         i_A       => s_immExtFetchExt,
+   --         i_B       => s_NextInstAddr,
+   --         i_nAddSub => '0',
+   --         o_C       => so_Car_PC4,
+   --         o_O       => so_Car_PC4,
+  --    	    o_S       => s_PC4Temp);
 		
 
   g_NBITMUX_BrnchCheckMUX: mux2t1_N port map (
@@ -490,12 +507,20 @@ begin
 	    	o_S => s_PC4,
 	    	o_C => so_Car_PC4);
 
-  g_NBITADDER_PC3: adder_N port map (
-	    	i_C => '0',
-	    	i_A => s_NextInstAddr,
-	    	i_B => x"00000004",	-- adding 4 for PC value
-	    	o_S => tempPcFour,
-	    	o_C => so_Car_PC4);
+  --c_carryAdder_PC2: carryLookaheadAdder port map(
+  --          i_A       => s_BrnchCheckMuxOut,
+  --          i_B       => x"00000004",
+  --          i_nAddSub => '0',
+  --          o_C       => so_Car_PC4,
+  --          o_O       => so_Car_PC4,
+  --    	    o_S       => s_PC4);
+
+  --g_NBITADDER_PC3: adder_N port map (
+	--    	i_C => '0',
+	--    	i_A => s_NextInstAddr,
+	--    	i_B => x"00000004",	-- adding 4 for PC value
+	--    	o_S => tempPcFour,
+	--    	o_C => so_Car_PC4);
 
   IMem: mem
     generic map(ADDR_WIDTH => ADDR_WIDTH,
@@ -512,7 +537,7 @@ begin
        i_RST         =>   iRST or s_flushIFID,   -- or s_flushIFID
        i_WE          =>   not s_stallIFID,     
        i_PC          =>   s_PC4,
-       i_PCNext      =>   tempPcFour,      
+       i_PCNext      =>   s_PC4, --tempPcFour,      
        i_Instr       =>   s_Inst,   
        o_PC          =>   s_PCfourIFID,
        o_PCNext      =>   s_NextInstAddrIFID,     

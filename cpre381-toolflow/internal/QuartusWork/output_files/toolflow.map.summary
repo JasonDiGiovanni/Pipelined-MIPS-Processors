@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sat Nov 30 15:33:24 2024
+Analysis & Synthesis Status : Successful - Thu Dec 12 17:13:24 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 Revision Name : toolflow
 Top-level Entity Name : MIPS_Processor
 Family : Cyclone IV E
-Total logic elements : 59,692
-    Total combinational functions : 25,812
-    Dedicated logic registers : 34,210
-Total registers : 34210
+Total logic elements : 59,660
+    Total combinational functions : 25,780
+    Dedicated logic registers : 34,180
+Total registers : 34180
 Total pins : 99
 Total virtual pins : 0
 Total memory bits : 32,768
