@@ -1,0 +1,61 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 48.37mhz Clk Constraint: 20.00ns Slack: -0.67ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : regFile:g_REGFILE|stackPointerRegister:STACK_POINTER|dffgPC:\G_NBit_Reg1:4:REGI|s_Q
+ To Node      : reg_NPC:g_NBITREG_PC|dffg:\G_NBit_Reg0:12:REGI|s_Q
+ Launch Clock : iCLK (INVERTED)
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     10.000     10.000           launch edge time
+     13.170      3.170  F        clock network delay
+     13.402      0.232     uTco  regFile:g_REGFILE|stackPointerRegister:STACK_POINTER|dffgPC:\G_NBit_Reg1:4:REGI|s_Q
+     13.402      0.000 FF  CELL  g_REGFILE|STACK_POINTER|\G_NBit_Reg1:4:REGI|s_Q|q
+     14.287      0.885 FF    IC  g_REGFILE|g_MUX_RT|Mux27~12|datab
+     14.676      0.389 FR  CELL  g_REGFILE|g_MUX_RT|Mux27~12|combout
+     15.646      0.970 RR    IC  g_REGFILE|g_MUX_RT|Mux27~15|datac
+     15.933      0.287 RR  CELL  g_REGFILE|g_MUX_RT|Mux27~15|combout
+     16.134      0.201 RR    IC  g_REGFILE|g_MUX_RT|Mux27~18|datac
+     16.421      0.287 RR  CELL  g_REGFILE|g_MUX_RT|Mux27~18|combout
+     17.382      0.961 RR    IC  g_REGFILE|g_MUX_RT|Mux27~19|datac
+     17.667      0.285 RR  CELL  g_REGFILE|g_MUX_RT|Mux27~19|combout
+     18.401      0.734 RR    IC  e_equalityModule|Equal0~17|datad
+     18.556      0.155 RR  CELL  e_equalityModule|Equal0~17|combout
+     18.762      0.206 RR    IC  e_equalityModule|Equal0~18|datad
+     18.901      0.139 RF  CELL  e_equalityModule|Equal0~18|combout
+     19.659      0.758 FF    IC  e_equalityModule|Equal0~19|dataa
+     20.012      0.353 FF  CELL  e_equalityModule|Equal0~19|combout
+     20.432      0.420 FF    IC  e_equalityModule|Equal0~38|dataa
+     20.785      0.353 FF  CELL  e_equalityModule|Equal0~38|combout
+     21.012      0.227 FF    IC  g_FETCHLOGIC|g_ADD|o_F|datad
+     21.162      0.150 FR  CELL  g_FETCHLOGIC|g_ADD|o_F|combout
+     21.647      0.485 RR    IC  g_NBITREG_PC|\G_NBit_Reg2:23:REGI|s_Q~0|datad
+     21.802      0.155 RR  CELL  g_NBITREG_PC|\G_NBit_Reg2:23:REGI|s_Q~0|combout
+     22.554      0.752 RR    IC  g_NBITMUX_PCnextAddr|\G_NBit_MUX:12:MUXI|g_Or|o_F~0|datad
+     22.693      0.139 RF  CELL  g_NBITMUX_PCnextAddr|\G_NBit_MUX:12:MUXI|g_Or|o_F~0|combout
+     22.920      0.227 FF    IC  g_NBITMUX_PCnextAddr|\G_NBit_MUX:12:MUXI|g_Or|o_F~1|datad
+     23.070      0.150 FR  CELL  g_NBITMUX_PCnextAddr|\G_NBit_MUX:12:MUXI|g_Or|o_F~1|combout
+     23.801      0.731 RR    IC  g_NBITMUX_PCnextAddr|\G_NBit_MUX:12:MUXI|g_Or|o_F~2|datad
+     23.956      0.155 RR  CELL  g_NBITMUX_PCnextAddr|\G_NBit_MUX:12:MUXI|g_Or|o_F~2|combout
+     23.956      0.000 RR    IC  g_NBITREG_PC|\G_NBit_Reg0:12:REGI|s_Q|d
+     24.043      0.087 RR  CELL  reg_NPC:g_NBITREG_PC|dffg:\G_NBit_Reg0:12:REGI|s_Q
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     23.365      3.365  R        clock network delay
+     23.373      0.008           clock pessimism removed
+     23.353     -0.020           clock uncertainty
+     23.371      0.018     uTsu  reg_NPC:g_NBITREG_PC|dffg:\G_NBit_Reg0:12:REGI|s_Q
+ Data Arrival Time  :    24.043
+ Data Required Time :    23.371
+ Slack              :    -0.672 (VIOLATED)
+ ===================================================================

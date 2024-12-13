@@ -1,6 +1,6 @@
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-Start time: 19:05:23 on Nov 22,2024
-vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd internal/testpy/tb.vhd proj/src/MIPS_types.vhd proj/src/Forwarding/forwardingUnit.vhd proj/src/Alu/equalityMuxModule.vhd proj/src/Alu/alu.vhd proj/src/Alu/equalityModule.vhd proj/src/Alu/mux8t1_32.vhd proj/src/Alu/lessThanModule.vhd proj/src/OnesComp/onesComp_N.vhd proj/src/OnesComp/onesComp.vhd proj/src/ControlLogic/controlUnit.vhd proj/src/PipelineRegisters/reg_EXMEM.vhd proj/src/PipelineRegisters/dffgNeg.vhd proj/src/PipelineRegisters/reg_MEMWB.vhd proj/src/PipelineRegisters/reg_IFID.vhd proj/src/PipelineRegisters/reg_IDEX.vhd proj/src/Registers/reg_N.vhd proj/src/Registers/regFile.vhd proj/src/Registers/reg_NPC.vhd proj/src/Registers/dffgPC.vhd proj/src/Registers/stackPointerRegister.vhd proj/src/TopLevel/sign_ext.vhd proj/src/TopLevel/mux32t1_new.vhd proj/src/TopLevel/MIPS_Processor.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/decoder5t32.vhd proj/src/FetchLogic/adder_N.vhd proj/src/FetchLogic/fetchLogic.vhd proj/src/FetchLogic/adder1bit.vhd proj/src/HazardDetection/hazardDetectionUnit.vhd proj/src/HazardDetection/mux3t1_32.vhd proj/src/BottomLevel/andg2.vhd proj/src/BottomLevel/mux2t1_N.vhd proj/src/BottomLevel/org2.vhd proj/src/BottomLevel/dffg.vhd proj/src/BottomLevel/invg.vhd proj/src/BottomLevel/xorg2.vhd proj/src/BottomLevel/mux2t1.vhd proj/src/CarryLookaheadAdder/fullAdder.vhd proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd proj/src/BarrelShifter/vectorReverser_N.vhd proj/src/BarrelShifter/barrelShifter.vhd 
+Start time: 13:09:56 on Dec 13,2024
+vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd internal/testpy/tb.vhd proj/src/MIPS_types.vhd proj/src/Forwarding/forwardingUnit.vhd proj/src/Alu/equalityMuxModule.vhd proj/src/Alu/alu.vhd proj/src/Alu/equalityModule.vhd proj/src/Alu/mux8t1_32.vhd proj/src/Alu/lessThanModule.vhd proj/src/OnesComp/onesComp_N.vhd proj/src/OnesComp/onesComp.vhd proj/src/ControlLogic/controlUnit.vhd proj/src/PipelineRegisters/reg_EXMEM.vhd proj/src/PipelineRegisters/dffgNeg.vhd proj/src/PipelineRegisters/reg_MEMWB.vhd proj/src/PipelineRegisters/reg_IFID.vhd proj/src/PipelineRegisters/reg_IDEX.vhd proj/src/Registers/stackPointerRegister.vhd proj/src/Registers/dffgPC.vhd proj/src/Registers/regFile.vhd proj/src/Registers/reg_NPC.vhd proj/src/Registers/reg_N.vhd proj/src/TopLevel/sign_ext.vhd proj/src/TopLevel/mux32t1_new.vhd proj/src/TopLevel/MIPS_Processor.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/decoder5t32.vhd proj/src/FetchLogic/adder_N.vhd proj/src/FetchLogic/fetchLogic.vhd proj/src/FetchLogic/adder1bit.vhd proj/src/HazardDetection/hazardDetectionUnit.vhd proj/src/HazardDetection/mux3t1_32.vhd proj/src/BottomLevel/andg2.vhd proj/src/BottomLevel/mux2t1_N.vhd proj/src/BottomLevel/org2.vhd proj/src/BottomLevel/dffg.vhd proj/src/BottomLevel/invg.vhd proj/src/BottomLevel/xorg2.vhd proj/src/BottomLevel/mux2t1.vhd proj/src/CarryLookaheadAdder/fullAdder.vhd proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd proj/src/BarrelShifter/vectorReverser_N.vhd proj/src/BarrelShifter/barrelShifter.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -42,17 +42,17 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd interna
 -- Compiling architecture structure of reg_IFID
 -- Compiling entity reg_IDEX
 -- Compiling architecture structure of reg_IDEX
--- Compiling entity reg_N
--- Compiling architecture structure of reg_N
 -- Loading package MIPS_types
+-- Compiling entity stackPointerRegister
+-- Compiling architecture structure of stackPointerRegister
+-- Compiling entity dffgPC
+-- Compiling architecture mixed of dffgPC
 -- Compiling entity regFile
 -- Compiling architecture structure of regFile
 -- Compiling entity reg_NPC
 -- Compiling architecture structure of reg_NPC
--- Compiling entity dffgPC
--- Compiling architecture mixed of dffgPC
--- Compiling entity stackPointerRegister
--- Compiling architecture structure of stackPointerRegister
+-- Compiling entity reg_N
+-- Compiling architecture structure of reg_N
 -- Compiling entity sign_ext
 -- Compiling architecture dataflow of sign_ext
 -- Compiling entity mux32t1_new
@@ -71,8 +71,8 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd interna
 -- Compiling architecture structure of adder1bit
 -- Compiling entity hazardDetectionUnit
 -- Compiling architecture dataflow of hazardDetectionUnit
-** Error: proj/src/HazardDetection/hazardDetectionUnit.vhd(225): Symbol "FlushIFIDwaitcycle" has already been declared in this region.
-** Error: proj/src/HazardDetection/hazardDetectionUnit.vhd(240): Symbol "FlushIDEXwaitcycle" has already been declared in this region.
-** Note: proj/src/HazardDetection/hazardDetectionUnit.vhd(259): VHDL Compiler exiting
-End time: 19:05:23 on Nov 22,2024, Elapsed time: 0:00:00
+** Error: proj/src/HazardDetection/hazardDetectionUnit.vhd(262): (vcom-1581) No feasible entries for infix operator 'and'.
+** Error: proj/src/HazardDetection/hazardDetectionUnit.vhd(262): Type error resolving infix expression "and" as type ieee.std_logic_1164.STD_LOGIC.
+** Note: proj/src/HazardDetection/hazardDetectionUnit.vhd(269): VHDL Compiler exiting
+End time: 13:09:56 on Dec 13,2024, Elapsed time: 0:00:00
 Errors: 2, Warnings: 1

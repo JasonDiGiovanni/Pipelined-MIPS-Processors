@@ -33555,19 +33555,10 @@ halt <= halt$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MIPS_Processor|hazardDetectionUnit:hazard_Detection
-i_CLK => dffg:FlushIFIDwaitcycle.i_CLK
 i_CLK => s_FlushIFID.CLK
 i_CLK => s_FlushIDEX.CLK
-i_CLK => dffg:FlushIDEXwaitcycle.i_CLK
 i_CLK => o_Stall~reg0.CLK
-i_CLK => s_FlushIDEXnot.CLK
-i_CLK => s_FlushIFIDnot.CLK
-i_CLK => dffg:FlushIFIDwaitwait.i_CLK
-i_CLK => dffg:FlushIDEXwaitwait.i_CLK
-i_RST => dffg:FlushIFIDwaitcycle.i_RST
-i_RST => dffg:FlushIFIDwaitwait.i_RST
-i_RST => dffg:FlushIDEXwaitcycle.i_RST
-i_RST => dffg:FlushIDEXwaitwait.i_RST
+i_RST => ~NO_FANOUT~
 i_RegWrAddrEXMEM[0] => Equal6.IN4
 i_RegWrAddrEXMEM[0] => Equal7.IN4
 i_RegWrAddrEXMEM[0] => Equal5.IN4
@@ -33642,43 +33633,12 @@ i_RegRtAddrIFID[4] => Equal4.IN5
 i_RegRtAddrIFID[4] => Equal7.IN5
 i_isBranchIFID => process_label.IN1
 i_isBranchIFID => process_label.IN1
+i_isBranchIFID => o_FlushIDEX.IN1
 i_isJump => s_FlushIFID.DATAA
 i_isJump => o_FlushIFID.IN1
 o_FlushIFID <= o_FlushIFID.DB_MAX_OUTPUT_PORT_TYPE
 o_Stall <= o_Stall~reg0.DB_MAX_OUTPUT_PORT_TYPE
 o_FlushIDEX <= o_FlushIDEX.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MIPS_Processor|hazardDetectionUnit:hazard_Detection|dffg:FlushIFIDwaitcycle
-i_CLK => s_Q.CLK
-i_RST => s_Q.ACLR
-i_WE => s_Q.ENA
-i_D => s_Q.DATAIN
-o_Q <= s_Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MIPS_Processor|hazardDetectionUnit:hazard_Detection|dffg:FlushIFIDwaitwait
-i_CLK => s_Q.CLK
-i_RST => s_Q.ACLR
-i_WE => s_Q.ENA
-i_D => s_Q.DATAIN
-o_Q <= s_Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MIPS_Processor|hazardDetectionUnit:hazard_Detection|dffg:FlushIDEXwaitcycle
-i_CLK => s_Q.CLK
-i_RST => s_Q.ACLR
-i_WE => s_Q.ENA
-i_D => s_Q.DATAIN
-o_Q <= s_Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MIPS_Processor|hazardDetectionUnit:hazard_Detection|dffg:FlushIDEXwaitwait
-i_CLK => s_Q.CLK
-i_RST => s_Q.ACLR
-i_WE => s_Q.ENA
-i_D => s_Q.DATAIN
-o_Q <= s_Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MIPS_Processor|mux2t1_N:g_NBITMUX_RegWrAddr
