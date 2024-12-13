@@ -1,5 +1,5 @@
 Flow report for toolflow
-Wed Nov 20 18:08:55 2024
+Fri Dec 13 11:57:27 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -41,20 +41,20 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 20 18:08:51 2024           ;
+; Flow Status                        ; Successful - Fri Dec 13 11:57:25 2024           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; toolflow                                        ;
 ; Top-level Entity Name              ; MIPS_Processor                                  ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F29C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 2,825 / 114,480 ( 2 % )                         ;
-;     Total combinational functions  ; 2,536 / 114,480 ( 2 % )                         ;
-;     Dedicated logic registers      ; 1,249 / 114,480 ( 1 % )                         ;
-; Total registers                    ; 1249                                            ;
+; Total logic elements               ; 2,660 / 114,480 ( 2 % )                         ;
+;     Total combinational functions  ; 2,402 / 114,480 ( 2 % )                         ;
+;     Dedicated logic registers      ; 1,354 / 114,480 ( 1 % )                         ;
+; Total registers                    ; 1354                                            ;
 ; Total pins                         ; 99 / 529 ( 19 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 65,656 / 3,981,312 ( 2 % )                      ;
+; Total memory bits                  ; 65,536 / 3,981,312 ( 2 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                 ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/20/2024 18:08:15 ;
+; Start date & time ; 12/13/2024 11:56:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; toolflow            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 114374077826700.173214769513164        ; --            ; --             ; --         ;
+; COMPILER_SIGNATURE_ID               ; 128122668756704.173411261414644        ; --            ; --             ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; MIPS_Processor ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; MIPS_Processor ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; MIPS_Processor ; Top        ;
@@ -91,11 +91,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 840 MB              ; 00:00:19                           ;
-; Fitter               ; 00:00:16     ; 1.1                     ; 2080 MB             ; 00:00:35                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 636 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 2.0                     ; 947 MB              ; 00:00:03                           ;
-; Total                ; 00:00:36     ; --                      ; --                  ; 00:00:59                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 836 MB              ; 00:00:19                           ;
+; Fitter               ; 00:00:12     ; 1.1                     ; 2072 MB             ; 00:00:22                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 635 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.4                     ; 946 MB              ; 00:00:02                           ;
+; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -104,10 +104,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+---------------------------+---------+------------+----------------+
 ; Module Name          ; Machine Hostname          ; OS Name ; OS Version ; Processor type ;
 +----------------------+---------------------------+---------+------------+----------------+
-; Analysis & Synthesis ; co1313-02.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
-; Fitter               ; co1313-02.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
-; Assembler            ; co1313-02.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
-; Timing Analyzer      ; co1313-02.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
+; Analysis & Synthesis ; co1313-07.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
+; Fitter               ; co1313-07.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
+; Assembler            ; co1313-07.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
+; Timing Analyzer      ; co1313-07.ece.iastate.edu ; Red Hat ; Red Hat    ; x86_64         ;
 +----------------------+---------------------------+---------+------------+----------------+
 
 

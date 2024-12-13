@@ -74,10 +74,11 @@ architecture structure of MIPS_Processor is
   component fetchLogic is
    port(i_CLK           : in std_logic;
 	i_RST           : in std_logic; 
-	is_Brch         : in std_logic; 
-	is_Jump         : in std_logic; 
-	is_JumpReg      : in std_logic;
-	is_zero		: in std_logic;
+	--is_Brch         : in std_logic; 
+	--is_Jump         : in std_logic; 
+	--is_JumpReg      : in std_logic;
+	--is_zero		: in std_logic;
+	i_fetchsel	: in std_logic_vector(1 downto 0);
 	i_instr         : in std_logic_vector(31 downto 0);
 	i_immed         : in std_logic_vector(31 downto 0);
 	i_rs_data       : in std_logic_vector(31 downto 0);
@@ -151,6 +152,13 @@ architecture structure of MIPS_Processor is
          o_O                  : out std_logic_vector(31 downto 0));
   end component;
 
+  component mux2t1_5 is
+    port(i_S                  : in std_logic;
+         i_D0                 : in std_logic_vector(4 downto 0);
+         i_D1                 : in std_logic_vector(4 downto 0);
+         o_O                  : out std_logic_vector(4 downto 0));
+  end component;
+
   component alu is
     port(i_A			: in std_logic_vector(31 downto 0);
 	i_B			: in std_logic_vector(31 downto 0);
@@ -212,6 +220,7 @@ component reg_IDEX is
        i_RegDst     : in std_logic;     		    -- RegDst control signal
        i_luiCtrl    : in std_logic;                         -- lui control signal
        i_ovflCtrl   : in std_logic;  
+       i_PCsel      : in std_logic;--optimization
        i_AluSrc     : in std_logic;    		 	    -- AluSrc control signal
        i_AluCtrl    : in std_logic_vector(3 downto 0);      -- AluCtrl control signal
        i_RegWrAddr  : in std_logic_vector(4 downto 0);      -- RegWrAddr
@@ -221,6 +230,7 @@ component reg_IDEX is
        i_B          : in std_logic_vector(31 downto 0);     -- B input
        i_SignExt    : in std_logic_vector(31 downto 0);     -- Sign Extended input
        i_PC         : in std_logic_vector(31 downto 0);     -- PC input
+       i_PCfetch    : in std_logic_vector(31 downto 0);
        o_Halt       : out std_logic;     		    -- Halt control signal
        o_Branch     : out std_logic;     		    -- Branch control signal
        o_MemToReg   : out std_logic;    		    -- MemToReg control signal
@@ -231,6 +241,7 @@ component reg_IDEX is
        o_RegDst     : out std_logic;     		    -- RegDst control signal
        o_luiCtrl    : out std_logic;                        -- lui control signal
        o_ovflCtrl   : out std_logic;
+       o_PCsel      : out std_logic;--optimization
        o_AluSrc     : out std_logic;     		    -- AluSrc control signal
        o_AluCtrl    : out std_logic_vector(3 downto 0);     -- AluCtrl control signal
        o_RegWrAddr  : out std_logic_vector(4 downto 0);     -- RegWrAddr
@@ -239,7 +250,8 @@ component reg_IDEX is
        o_A          : out std_logic_vector(31 downto 0);    -- A output
        o_B          : out std_logic_vector(31 downto 0);    -- B output
        o_SignExt    : out std_logic_vector(31 downto 0);    -- Sign Extended output
-       o_PC         : out std_logic_vector(31 downto 0));   -- Pc output
+       o_PC         : out std_logic_vector(31 downto 0);   -- Pc output
+       o_PCfetch    : out std_logic_vector(31 downto 0));
 end component;
 
 component reg_EXMEM is
@@ -309,15 +321,17 @@ end component;
 component equalityModule is
   port(i_A          : in std_logic_vector(31 downto 0);
        i_B          : in std_logic_vector(31 downto 0);
+       i_brch       : in std_logic;
        o_F          : out std_logic);
 end component;
 
 
 
 
+
   signal s_aluctr   : std_logic_vector(3 downto 0); 
-  signal s_rs_sel,s_rt_sel, s_RegWrAddrCtrl    : std_logic_vector(4 downto 0);
-  signal s_rs_DA, s_rt_DB, s_immExt, s_aluOut, s_ialuB, s_DMemOrAlu, s_DMemOrAluOrLui, s_RegWrAddrLong, s_RegWrAddrLongOut, s_PC4, si_PC, s_PCfetch, s_aluUnitOut : std_logic_vector(31 downto 0);  
+  signal s_rs_sel,s_rt_sel, s_RegWrAddrCtrl, s_RegWrAddrLongOut    : std_logic_vector(4 downto 0);
+  signal s_rs_DA, s_rt_DB, s_immExt, s_aluOut, s_ialuB, s_DMemOrAlu, s_DMemOrAluOrLui, s_RegWrAddrLong, s_PC4, si_PC, s_PCfetch, s_aluUnitOut, s_fetchJumpVal : std_logic_vector(31 downto 0);  
   signal s_isJump, s_isJumpReg, s_is_zero, s_aluCar, s_aluSrc, s_memWr, s_regDst, s_MemtoReg, s_is_Lui, s_signExtSel, s_BrchEq, s_BrchNe, 
          temp, tempt, s_ALUOverflow, s_CntrlOverflow, so_Car_PC4, s_tempHalt, s_RegWrCtrl, s_EqlOut, s_BrnchMuxOut, s_OvflTemp : std_logic;
 
@@ -336,8 +350,8 @@ signal s_PCfourIFID, s_InstIFID, s_rs_DAIFID, s_rt_DBIFID : std_logic_vector(31 
 signal s_aluctrIDEX : std_logic_vector(3 downto 0); 
 signal s_RegWrAddrIDEX : std_logic_vector(4 downto 0); 
 signal s_ImmIDEX : std_logic_vector(15 downto 0); 
-signal s_PCfourIDEX, s_InstIDEX, s_rs_DAIDEX,  s_rt_DBIDEX, s_immExtIDEX: std_logic_vector(31 downto 0);  
-signal s_isJumpIDEX, s_isJumpRegIDEX, s_luiCtrlIDEX, s_BranchIDEX, s_DMemWrIDEX, s_RegWrIDEX, s_regDstIDEX, s_MemtoRegIDEX, s_aluSrcIDEX, s_HaltIDEX  : std_logic;
+signal s_PCfourIDEX, s_InstIDEX, s_rs_DAIDEX,  s_rt_DBIDEX, s_immExtIDEX, s_PCfetchIDEX: std_logic_vector(31 downto 0);  
+signal s_isJumpIDEX, s_isJumpRegIDEX, s_luiCtrlIDEX, s_BranchIDEX, s_DMemWrIDEX, s_RegWrIDEX, s_regDstIDEX, s_MemtoRegIDEX, s_aluSrcIDEX, s_HaltIDEX, s_ovflCtrlIDEX, s_PCselIDEX  : std_logic;
 ---------End ID/EX---------------
 
 
@@ -379,9 +393,9 @@ begin
 		
 
   g_NBITMUX_PCnextAddr: mux2t1_N port map (
-		i_S => ((s_BrnchMuxOut and (s_BrchEq or s_BrchNe)) or s_isJump or s_isJumpReg) ,	
+		i_S => s_PCselIDEX,	
 		i_D0 => s_PC4,
-		i_D1 => s_PCfetch,
+		i_D1 => s_PCfetchIDEX,
 		o_O => si_PC);
 
 
@@ -432,14 +446,18 @@ e_equalityModule: equalityModule
   port map(
             i_A  => s_rs_DAIFID,
       	    i_B  => s_rt_DBIFID,
+            i_brch  => s_BrchNe,
       	    o_F  => s_EqlOut);
 
-BrnchMux: mux2t1 
-  port map(
-           i_S      => s_BrchNe,      -- if bit is 0 then beq, if bit is a 1 then bne
-           i_D0     => s_EqlOut, 
-           i_D1     => not s_EqlOut,  
-           o_O      => s_BrnchMuxOut);  
+
+--BrnchMux: mux2t1 
+--  port map(
+--           i_S      => s_BrchNe,      -- if bit is 0 then beq, if bit is a 1 then bne
+--           i_D0     => s_EqlOut, 
+--           i_D1     => not s_EqlOut,  
+ --          o_O      => s_BrnchMuxOut);  
+
+--s_fetchJumpVal <= s_PCfourIFID(31 downto 28) & s_InstIFID(27 downto 2) & "00";
 
   g_FETCHLOGIC : fetchLogic port map(
 		i_CLK       	=> iCLK, 
@@ -447,8 +465,11 @@ BrnchMux: mux2t1
 		is_Brch  	=> s_BrchEq OR s_BrchNe,
 		is_Jump  	=> s_isJump,
 		is_JumpReg  	=> s_isJumpReg,
-		is_zero  	=> s_BrnchMuxOut,
-		i_instr    	=> s_InstIFID, 
+		is_zero  	=> s_EqlOut, --s_BrnchMuxOut,
+		i_fetchsel	=> "00", --optimization
+		i_instr		=> s_InstIFID,
+		--i_instr(31 downto 2) => s_InstIFID(31 downto 2), -- optimization
+		--i_instr(1 downto 0) => "00",
 		i_immed    	=> s_immExt, 
 		i_rs_data    	=> s_rs_DAIFID, 
                 i_PCplusFour    => s_PCfourIFID,                                
@@ -489,21 +510,19 @@ BrnchMux: mux2t1
 
 
 
- g_NBITMUX_RegWrAddr: mux2t1_N port map (
+ g_NBITMUX_RegWrAddr: mux2t1_5 port map (
 		i_S => s_regDst,	
-		i_D0(31 downto 5) => "000000000000000000000000000", -- 27 zeros and 5 address bits
-		i_D0(4 downto 0) => s_InstIFID(20 downto 16), 
-		i_D1(31 downto 5) => "000000000000000000000000000", -- 27 zeros and 5 address bits
-		i_D1(4 downto 0) => s_InstIFID(15 downto 11), 
+		i_D0 => s_InstIFID(20 downto 16), 
+		i_D1 => s_InstIFID(15 downto 11), 
 		o_O => s_RegWrAddrLongOut);
 
-  g_NBITMUX_RegWrAddrJAL: mux2t1_N port map (
+  g_NBITMUX_RegWrAddrJAL: mux2t1_5 port map (
 		i_S => s_isJump,	
 		i_D0 => s_RegWrAddrLongOut,
-		i_D1 => x"0000001F",
-		o_O => s_RegWrAddrLong);
+		i_D1 => "11111",
+		o_O => s_RegWrAddrCtrl); --s_RegWrAddrLong); --optimization
 
-  s_RegWrAddrCtrl <= s_RegWrAddrLong(4 downto 0);
+  --s_RegWrAddrCtrl <= s_RegWrAddrLong(4 downto 0);
 ------------------------------------------------------End Decode--------------------------------------------------------------------------
 
 IDEX_Pipeline_Reg:  reg_IDEX port map(
@@ -529,6 +548,8 @@ IDEX_Pipeline_Reg:  reg_IDEX port map(
        i_B           =>   s_rt_DBIFID,
        i_SignExt     =>   s_immExt,
        i_PC          =>   s_PCfourIFID,
+       i_PCsel       =>   ((s_EqlOut and (s_BrchEq or s_BrchNe)) or s_isJump or s_isJumpReg),--optimization --s_BrnchMuxOut
+       i_PCfetch     =>   s_PCfetch, --optimization
        o_Halt        =>   s_HaltIDEX,
        o_Branch      =>   s_BranchIDEX,
        o_MemToReg    =>   s_MemtoRegIDEX,
@@ -547,7 +568,9 @@ IDEX_Pipeline_Reg:  reg_IDEX port map(
        o_A           =>   s_rs_DAIDEX,
        o_B           =>   s_rt_DBIDEX,
        o_SignExt     =>   s_immExtIDEX,
-       o_PC          =>   s_PCfourIDEX);
+       o_PC          =>   s_PCfourIDEX, 
+       o_PCsel       =>   s_PCselIDEX, --optimization
+       o_PCfetch     =>   s_PCfetchIDEX);--optimization
 
 ------------------------------------------------------Start Execute-----------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-Start time: 11:42:21 on Nov 16,2024
-vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd internal/testpy/tb.vhd proj/src/MIPS_types.vhd proj/src/TopLevel/mux32t1_new.vhd proj/src/TopLevel/sign_ext.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/MIPS_Processor.vhd proj/src/TopLevel/decoder5t32.vhd proj/src/Alu/alu.vhd proj/src/Alu/lessThanModule.vhd proj/src/Alu/equalityModule.vhd proj/src/Alu/mux8t1_32.vhd proj/src/Alu/equalityMuxModule.vhd proj/src/Registers/reg_N.vhd proj/src/Registers/regFile.vhd proj/src/Registers/stackPointerRegister.vhd proj/src/Registers/dffgPC.vhd proj/src/Registers/reg_NPC.vhd proj/src/OnesComp/onesComp_N.vhd proj/src/OnesComp/onesComp.vhd proj/src/PipelineRegisters/reg_IFID.vhd proj/src/PipelineRegisters/reg_EXMEM.vhd proj/src/PipelineRegisters/reg_MEMWB.vhd proj/src/PipelineRegisters/reg_IDEX.vhd proj/src/PipelineRegisters/dffgNeg.vhd proj/src/ControlLogic/controlUnit.vhd proj/src/BottomLevel/andg2.vhd proj/src/BottomLevel/mux2t1_N.vhd proj/src/BottomLevel/mux2t1.vhd proj/src/BottomLevel/invg.vhd proj/src/BottomLevel/org2.vhd proj/src/BottomLevel/dffg.vhd proj/src/BottomLevel/xorg2.vhd proj/src/FetchLogic/adder1bit.vhd proj/src/FetchLogic/fetchLogic.vhd proj/src/FetchLogic/adder_N.vhd proj/src/BarrelShifter/vectorReverser_N.vhd proj/src/BarrelShifter/barrelShifter.vhd proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd proj/src/CarryLookaheadAdder/fullAdder.vhd 
+Start time: 01:05:44 on Dec 13,2024
+vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd internal/testpy/tb.vhd proj/src/MIPS_types.vhd proj/src/Alu/equalityMuxModule.vhd proj/src/Alu/alu.vhd proj/src/Alu/equalityModule.vhd proj/src/Alu/mux8t1_32.vhd proj/src/Alu/lessThanModule.vhd proj/src/OnesComp/onesComp_N.vhd proj/src/OnesComp/onesComp.vhd proj/src/ControlLogic/controlUnit.vhd proj/src/PipelineRegisters/reg_EXMEM.vhd proj/src/PipelineRegisters/dffgNeg.vhd proj/src/PipelineRegisters/reg_MEMWB.vhd proj/src/PipelineRegisters/reg_IFID.vhd proj/src/PipelineRegisters/reg_IDEX.vhd proj/src/Registers/stackPointerRegister.vhd proj/src/Registers/dffgPC.vhd proj/src/Registers/regFile.vhd proj/src/Registers/reg_NPC.vhd proj/src/Registers/reg_N.vhd proj/src/TopLevel/sign_ext.vhd proj/src/TopLevel/mux32t1_new.vhd proj/src/TopLevel/mux2t1_5.vhd proj/src/TopLevel/mux4t1_32.vhd proj/src/TopLevel/MIPS_Processor.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/decoder5t32.vhd proj/src/FetchLogic/adder_N.vhd proj/src/FetchLogic/fetchLogic.vhd proj/src/FetchLogic/adder1bit.vhd proj/src/BottomLevel/andg2.vhd proj/src/BottomLevel/mux2t1_N.vhd proj/src/BottomLevel/org2.vhd proj/src/BottomLevel/dffg.vhd proj/src/BottomLevel/nxorg2.vhd proj/src/BottomLevel/invg.vhd proj/src/BottomLevel/xorg2.vhd proj/src/BottomLevel/mux2t1.vhd proj/src/CarryLookaheadAdder/fullAdder.vhd proj/src/CarryLookaheadAdder/carryLookAheadAdder.vhd proj/src/BarrelShifter/vectorReverser_N.vhd proj/src/BarrelShifter/barrelShifter.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -11,37 +11,62 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd interna
 -- Compiling architecture mixed of tb
 ** Warning: proj/src/MIPS_types.vhd(15): (vcom-1615) Existing package 'MIPS_types' at line 15 will be overwritten.
 -- Compiling package MIPS_types
--- Loading package MIPS_types
--- Compiling entity mux32t1_new
--- Compiling architecture mux_arch of mux32t1_new
--- Loading package NUMERIC_STD
--- Compiling entity sign_ext
--- Compiling architecture dataflow of sign_ext
--- Compiling entity mem
--- Compiling architecture rtl of mem
--- Compiling entity MIPS_Processor
--- Compiling architecture structure of MIPS_Processor
--- Compiling entity decoder5t32
--- Compiling architecture dataflow of decoder5t32
+-- Compiling entity equalityMuxModule
+-- Compiling architecture dataflow of equalityMuxModule
 -- Compiling entity alu
 -- Compiling architecture structural of alu
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_SIGNED
--- Compiling entity lessThanModule
--- Compiling architecture dataflow of lessThanModule
 -- Compiling entity equalityModule
 -- Compiling architecture dataflow of equalityModule
 -- Compiling entity mux8t1_32
 -- Compiling architecture structural of mux8t1_32
--- Compiling entity equalityMuxModule
--- Compiling architecture dataflow of equalityMuxModule
--- Compiling entity reg_N
--- Compiling architecture structure of reg_N
--- Compiling entity regFile
--- Compiling architecture structure of regFile
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity lessThanModule
+-- Compiling architecture dataflow of lessThanModule
+-- Compiling entity onesComp_N
+-- Compiling architecture structural of onesComp_N
+-- Compiling entity onesComp
+-- Compiling architecture structure of onesComp
+-- Compiling entity controlUnit
+-- Compiling architecture behavioral of controlUnit
+-- Compiling entity reg_EXMEM
+-- Compiling architecture structure of reg_EXMEM
+-- Compiling entity dffgNeg
+-- Compiling architecture mixed of dffgNeg
+-- Compiling entity reg_MEMWB
+-- Compiling architecture structure of reg_MEMWB
+-- Compiling entity reg_IFID
+-- Compiling architecture structure of reg_IFID
+-- Compiling entity reg_IDEX
+-- Compiling architecture structure of reg_IDEX
+-- Loading package NUMERIC_STD
+-- Loading package MIPS_types
 -- Compiling entity stackPointerRegister
 -- Compiling architecture structure of stackPointerRegister
-** Error: proj/src/Registers/stackPointerRegister.vhd(90): Labels do not match: 'G_NBit_Reg2' and 'G_NBit_Reg3'.
-** Note: proj/src/Registers/stackPointerRegister.vhd(100): VHDL Compiler exiting
-End time: 11:42:21 on Nov 16,2024, Elapsed time: 0:00:00
-Errors: 1, Warnings: 1
+-- Compiling entity dffgPC
+-- Compiling architecture mixed of dffgPC
+-- Compiling entity regFile
+-- Compiling architecture structure of regFile
+-- Compiling entity reg_NPC
+-- Compiling architecture structure of reg_NPC
+-- Compiling entity reg_N
+-- Compiling architecture structure of reg_N
+-- Compiling entity sign_ext
+-- Compiling architecture dataflow of sign_ext
+-- Compiling entity mux32t1_new
+-- Compiling architecture mux_arch of mux32t1_new
+-- Compiling entity mux2t1_5
+-- Compiling architecture structural of mux2t1_5
+-- Compiling entity mux4t1_32
+-- Compiling architecture structural of mux4t1_32
+-- Compiling entity MIPS_Processor
+-- Compiling architecture structure of MIPS_Processor
+** Error (suppressible): proj/src/TopLevel/MIPS_Processor.vhd(515): (vcom-1272) Length of formal "i_D0" is 32; length of slice name is 5.
+** Error (suppressible): proj/src/TopLevel/MIPS_Processor.vhd(516): (vcom-1272) Length of formal "i_D1" is 32; length of slice name is 5.
+** Error (suppressible): proj/src/TopLevel/MIPS_Processor.vhd(517): (vcom-1272) Length of formal "o_O" is 32; length of actual is 5.
+** Error (suppressible): proj/src/TopLevel/MIPS_Processor.vhd(521): (vcom-1272) Length of formal "i_D0" is 32; length of actual is 5.
+** Error (suppressible): proj/src/TopLevel/MIPS_Processor.vhd(523): (vcom-1272) Length of formal "o_O" is 32; length of actual is 5.
+** Error (suppressible): proj/src/TopLevel/MIPS_Processor.vhd(522): (vcom-1272) Length of expected is 32; length of actual is 5.
+** Note: proj/src/TopLevel/MIPS_Processor.vhd(705): VHDL Compiler exiting
+End time: 01:05:44 on Dec 13,2024, Elapsed time: 0:00:00
+Errors: 6, Warnings: 1

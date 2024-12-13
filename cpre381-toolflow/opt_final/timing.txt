@@ -1,0 +1,51 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 51.69mhz Clk Constraint: 20.00ns Slack: 0.65ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : regFile:g_REGFILE|reg_N:\G_N_Reg:17:REGI|dffg:\G_NBit_Reg:1:REGI|s_Q
+ To Node      : reg_IDEX:IDEX_Pipeline_Reg|dffg:PCsel|s_Q
+ Launch Clock : iCLK (INVERTED)
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     10.000     10.000           launch edge time
+     13.135      3.135  F        clock network delay
+     13.367      0.232     uTco  regFile:g_REGFILE|reg_N:\G_N_Reg:17:REGI|dffg:\G_NBit_Reg:1:REGI|s_Q
+     13.367      0.000 RR  CELL  g_REGFILE|\G_N_Reg:17:REGI|\G_NBit_Reg:1:REGI|s_Q|q
+     13.797      0.430 RR    IC  g_REGFILE|g_MUX_RS|Mux30~9|datad
+     13.952      0.155 RR  CELL  g_REGFILE|g_MUX_RS|Mux30~9|combout
+     14.903      0.951 RR    IC  g_REGFILE|g_MUX_RS|Mux30~10|datab
+     15.321      0.418 RR  CELL  g_REGFILE|g_MUX_RS|Mux30~10|combout
+     17.740      2.419 RR    IC  g_REGFILE|g_MUX_RS|Mux30~18|datab
+     18.142      0.402 RR  CELL  g_REGFILE|g_MUX_RS|Mux30~18|combout
+     19.694      1.552 RR    IC  g_REGFILE|g_MUX_RS|Mux30~19|datab
+     20.039      0.345 RR  CELL  g_REGFILE|g_MUX_RS|Mux30~19|combout
+     20.267      0.228 RR    IC  e_equalityModule|Equal0~0|datad
+     20.406      0.139 RF  CELL  e_equalityModule|Equal0~0|combout
+     20.675      0.269 FF    IC  e_equalityModule|Equal0~4|datab
+     21.025      0.350 FF  CELL  e_equalityModule|Equal0~4|combout
+     21.477      0.452 FF    IC  e_equalityModule|Equal0~20|datab
+     21.827      0.350 FF  CELL  e_equalityModule|Equal0~20|combout
+     22.053      0.226 FF    IC  comb~1|datad
+     22.203      0.150 FR  CELL  comb~1|combout
+     22.203      0.000 RR    IC  IDEX_Pipeline_Reg|PCsel|s_Q|d
+     22.290      0.087 RR  CELL  reg_IDEX:IDEX_Pipeline_Reg|dffg:PCsel|s_Q
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     22.913      2.913  R        clock network delay
+     22.945      0.032           clock pessimism removed
+     22.925     -0.020           clock uncertainty
+     22.943      0.018     uTsu  reg_IDEX:IDEX_Pipeline_Reg|dffg:PCsel|s_Q
+ Data Arrival Time  :    22.290
+ Data Required Time :    22.943
+ Slack              :     0.653
+ ===================================================================
